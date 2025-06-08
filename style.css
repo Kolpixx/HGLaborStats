@@ -60,13 +60,13 @@ header {
 }
 
 #online-circle {
-    border: 3px solid #74ff7d;
+    border: 3px solid #6a6a6a;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #74ff7d;
+    background-color: #6a6a6a;
     margin-right: 0.3rem;
-    box-shadow: 0 0 10px rgb(140, 255, 131);
+    box-shadow: 0 0 10px rgb(198, 198, 198);
 }
 
 .server-widget-flexbox {

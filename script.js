@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
             players = body.players.online;
 
             if (online) {
+                document.getElementById("online-circle").style.borderColor = "#74ff7d";
+                document.getElementById("online-circle").style.backgroundColor = "#74ff7d";
+                document.getElementById("online-circle").style.boxShadow = "0 0 10px rgb(140, 255, 131)";
+
                 document.getElementById("server-status").innerText = players + " online"
             } else {
                 document.getElementById("online-circle").style.borderColor = "red";
