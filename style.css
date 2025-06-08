@@ -16,7 +16,7 @@ html, body {
 body {
     background-image: url("./resources/background.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     top: 0;
     left: 0;
 }
