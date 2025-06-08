@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HGLabor - Stats</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="server-widget">
+            <div class="server-widget-flexbox">
+                <img src="resources/server_logo.png" alt="HGLabor Server Logo" id="server-info-logo">
+                <div class="server-info-text-flexbox">
+                    <p id="ip">hglabor.de</p>
+                    <div class="online-flexbox">
+                        <div id="online-circle"></div>
+                        <p id="server-status">loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <img src="resources/logo.png" alt="HGLabor Logo (old)">
+        <h1 id="title"><span id=HG-text>HG</span>Labor x <span id="NoRisk-text">NoRisk</span> Client</h1>
+        <div class="search-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="rgba(0, 170, 255, 0.67)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+            <form method="get">
+                <input type="text" name="search" placeholder="Name or UUID">
+            </form>
+        </div>
+        <div class="buttons-wrapper">
+            <div>
+                <p>LEADERBOARD</p>
+            </div>
+            <div>
+                <p>PLAY</p>
+            </div>
+            <div>
+                <p>EVENTS</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-wrapper">
+            <a href="#">STATUS</a>
+            <a href="#">IMPRINT</a>
+            <a href="#">PRIVACY</a>
+        </div>
+        <div class="socials-wrapper">
+            <svg onclick="window.open(src='https://github.com/HGLabor/', target='_blank')" id="github-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_3_156)"><path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C31.046 0 40 9.17986 40 20.5059C40 29.5639 34.276 37.2479 26.334 39.9619C25.32 40.1639 24.96 39.5235 24.96 38.9775C24.96 38.3015 24.984 36.0936 24.984 33.3496C24.984 31.4376 24.344 30.1897 23.626 29.5537C28.08 29.0457 32.76 27.3115 32.76 19.4355C32.76 17.1955 31.984 15.3676 30.7 13.9316C30.908 13.4136 31.594 11.3279 30.504 8.50391C30.504 8.50391 28.828 7.95445 25.01 10.6064C23.412 10.1524 21.7 9.92402 20 9.91602C18.3 9.92402 16.59 10.1524 14.994 10.6064C11.172 7.95445 9.492 8.50391 9.492 8.50391C8.406 11.3279 9.092 13.4136 9.298 13.9316C8.02 15.3676 7.23801 17.1955 7.23801 19.4355C7.23801 27.2915 11.908 29.0523 16.35 29.5703C15.778 30.0823 15.26 30.9855 15.08 32.3115C13.94 32.8355 11.044 33.7424 9.25999 30.6084C9.25999 30.6084 8.202 28.6381 6.194 28.4941C6.194 28.4941 4.244 28.4682 6.058 29.7402C6.058 29.7402 7.368 30.3702 8.278 32.7402C8.278 32.7402 9.45201 36.4002 15.016 35.1602C15.026 36.8742 15.044 38.4895 15.044 38.9775C15.044 39.5195 14.676 40.1539 13.678 39.9639C5.72999 37.2539 0 29.5659 0 20.5059C0 9.17986 8.956 0 20 0Z" fill="white"/></g><defs><clipPath id="clip0_3_156"><rect width="40" height="40" fill="white"/></clipPath></defs></svg>
+            <svg onclick="window.open(src='https://youtube.com/@noriskk', target='_blank')" id="youtube-icon" width="48" height="42" viewBox="0 0 48 42" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_31_169)" filter="url(#filter0_d_31_169)"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.9769 25.1722V13.9486C23.9613 15.8235 27.0472 17.6346 30.6969 19.5873C27.6867 21.2567 23.9613 23.1298 19.9769 25.1722ZM42.182 8.36657C41.4947 7.46105 40.3233 6.75618 39.0762 6.52282C35.4105 5.82672 12.542 5.82474 8.8783 6.52282C7.87822 6.7103 6.98767 7.16346 6.22267 7.86754C2.99927 10.8593 4.00933 26.9034 4.78629 29.5023C5.11301 30.6272 5.53538 31.4385 6.0673 31.9711C6.75262 32.6751 7.69093 33.1599 8.76872 33.3773C11.7869 34.0016 27.3361 34.3507 39.0124 33.4711C40.0882 33.2836 41.0404 32.7832 41.7915 32.0492C44.7719 29.0693 44.5687 12.1243 42.182 8.36657Z" fill="white"/></g><defs><filter id="filter0_d_31_169" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_31_169"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_31_169" result="shape"/></filter><clipPath id="clip0_31_169"><rect width="40" height="40" fill="white" transform="translate(4)"/></clipPath></defs></svg>
+            <svg onclick="window.open(src='https://discord.gg/DvtfPYzt49', target='_blank')" id="discord-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.8838 7.04634C31.2945 5.83489 28.526 4.95445 25.6315 4.45312C25.276 5.09581 24.8607 5.96023 24.5744 6.64788C21.4975 6.18515 18.4489 6.18515 15.4286 6.64788C15.1423 5.96023 14.7176 5.09581 14.3589 4.45312C11.4613 4.95445 8.68959 5.83812 6.10032 7.05276C0.877738 14.9448 -0.538019 22.6408 0.169861 30.2275C3.63375 32.8142 6.99068 34.3856 10.291 35.4138C11.1058 34.2924 11.8326 33.1002 12.4586 31.8438C11.2663 31.3907 10.1242 30.8316 9.04512 30.1825C9.3314 29.9704 9.61143 29.7487 9.88197 29.5205C16.4637 32.5989 23.6148 32.5989 30.1179 29.5205C30.3916 29.7487 30.6716 29.9704 30.9547 30.1825C29.8725 30.8348 28.7273 31.3939 27.5349 31.847C28.161 33.1002 28.8846 34.2956 29.7026 35.417C33.0061 34.3888 36.3661 32.8174 39.83 30.2275C40.6606 21.4325 38.4111 13.8072 33.8838 7.04634ZM13.3553 25.5617C11.3795 25.5617 9.75925 23.7172 9.75925 21.4711C9.75925 19.2249 11.3449 17.3773 13.3553 17.3773C15.3657 17.3773 16.9859 19.2217 16.9513 21.4711C16.9545 23.7172 15.3657 25.5617 13.3553 25.5617ZM26.6446 25.5617C24.6688 25.5617 23.0485 23.7172 23.0485 21.4711C23.0485 19.2249 24.6342 17.3773 26.6446 17.3773C28.6549 17.3773 30.2752 19.2217 30.2406 21.4711C30.2406 23.7172 28.6549 25.5617 26.6446 25.5617Z" fill="white"/></svg>
+        </div>
+    </footer>
+</body>
+</html>

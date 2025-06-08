@@ -1,0 +1,244 @@
+/* Everything */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins-bold", sans-serif;
+    color: white;
+    transition: ease 0.5s;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("/resources/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+/* Header */
+
+header {
+    height: 10vh;
+}
+
+.server-widget {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    border: 3px solid rgba(255, 255, 255, 0.20);
+    border-radius: 1rem;
+    background-color: rgba(61, 190, 255, 0.33);
+    width: 15rem;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    overflow-y: scroll;
+}
+
+#server-info-logo {
+    margin-right: 1rem;
+}
+
+#ip {
+    margin-top: 0.8rem;
+}
+
+.online-flexbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#server-status {
+    margin-left: 0.2rem;
+}
+
+#online-circle {
+    border: 3px solid #74ff7d;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #74ff7d;
+    margin-right: 0.3rem;
+    box-shadow: 0 0 10px rgb(140, 255, 131);
+}
+
+.server-widget-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > img {
+    width: 19.563rem;
+}
+
+#title {
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    cursor: default;
+}
+
+#HG-text {
+    background: linear-gradient(153deg,rgba(85, 255, 255, 1) 0%, rgba(189, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#NoRisk-text {
+    background: linear-gradient(153deg,rgba(85, 255, 255, 1) 0%, rgba(189, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+    /* Search */
+
+.search-wrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid rgba(33, 163, 255, 0.28);
+    border-radius: 1rem;
+    background: linear-gradient(135deg,rgba(0, 0, 0, 0.22) 0%, rgba(49, 212, 255, 0.32) 90%);
+    width: 35rem;
+    height: 4.375rem;
+    background-clip: content-box;
+    margin-bottom: 2.5rem;
+}
+
+.search-wrapper > svg {
+    margin: 1rem;
+    scale: 1.25;
+}
+
+@keyframes inputplaceholder {
+    from{width: 0;}
+    to{width: 31rem;}
+}
+
+.search-wrapper > form {
+    width: 31rem;
+    overflow: hidden;
+}
+
+.search-wrapper > form > input {
+    border: none;
+    height: 4.375rem;
+    width: 0;
+    font-size: 2rem;
+    background: transparent;
+    color: #68ffff;
+    animation: inputplaceholder 3s ease-in-out forwards;
+    overflow: hidden;
+}
+
+.search-wrapper > form > input:focus {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.search-wrapper:hover {
+    border-color: rgb(33, 163, 255);
+}
+
+    /* Buttons */
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.buttons-wrapper > div {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 13rem;
+    height: 3.5rem;
+    border: 3px solid rgba(148, 211, 255, 0.58);
+    border-radius: 1rem;
+    background-color: rgba(88, 191, 255, 0.42);
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.buttons-wrapper > div > p {
+    background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(147, 235, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttons-wrapper > div:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+/* Links */
+
+.links-wrapper {
+    width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.links-wrapper > a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+/* Socials */
+
+.socials-wrapper {
+    position: absolute;
+    right: 1vh;
+    bottom: 1vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.socials-wrapper > svg {
+    margin: 0 0.5rem;
+}
+
+#youtube-icon:hover path {
+    fill: #CD201F;
+}
+
+#discord-icon:hover path {
+    fill: #7785cc
+}
