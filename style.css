@@ -285,6 +285,11 @@ main > img {
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
+.eventPrize:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(88, 191, 255, 0.25);
+}
+
 .eventPrizeTitle {
     color: deepskyblue;
     margin-bottom: 0.5rem;
@@ -548,7 +553,13 @@ footer {
 .stats-row > div {
     border: 2px solid rgba(148, 211, 255, 0.58);
     border-radius: 1rem;
-    background: rgba(88, 191, 255, 0.42);
+    background: rgba(88, 191, 255, 0.25);
+}
+
+.stats-row > div:hover {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    background-color: rgba(88, 191, 255, 0.42);
 }
 
 /* First row */
