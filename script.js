@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("online-circle").style.backgroundColor = "red";
             document.getElementById("online-circle").style.boxShadow = "0 0 10px rgb(255, 131, 131)";
 
-            document.getElementById("server-status").innerText = "error";
+            document.getElementById("server-status").innerText = "fehler";
             document.getElementById("server-status").style.color = "red";
         });
 })
@@ -44,8 +44,6 @@ document.addEventListener('mousedown', (event) => {
 })
 
 function openPopup(popupName) {
-    console.log("Opened Play popup");
-
     document.getElementById(popupName).style.visibility = "visible";
     document.getElementById(popupName).style.opacity = "1";
     document.getElementById("darken").style.visibility = "visible";

@@ -125,7 +125,42 @@ main > img {
     z-index: 1;
 }
 
+/* leaderboardPopup */
+
+#leaderboardPopup {
+    width: 33vw;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid rgba(148, 211, 255, 0.58);
+    border-radius: 1rem;
+    background-color: rgba(29, 102, 140, 0.4);
+    z-index: 2;
+}
+
+#leaderboardPopup > h1 {
+    text-align: center;
+    margin: 1rem;
+    text-decoration: underline;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+#leaderboardPopup > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
 /* playPopup */
+
+#playPopup > p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
 
 #playPopup {
     width: 33vw;
@@ -144,11 +179,13 @@ main > img {
     text-align: center;
     margin: 1rem;
     text-decoration: underline;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 #playPopup > ol > li {
     margin: 1rem;
     font-size: 1.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* eventsPopup */
@@ -172,6 +209,7 @@ main > img {
     text-align: center;
     margin: 1rem;
     text-decoration: underline;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .events > div {
@@ -180,6 +218,7 @@ main > img {
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.25);
     padding: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventName {
@@ -187,12 +226,14 @@ main > img {
     text-decoration: underline;
     color: deepskyblue;
     font-size: 2rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventDate {
     text-align: center;
     color: lightgray;
     margin-top: 0.2rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventSeparator {
@@ -204,10 +245,12 @@ main > img {
 .eventInfoTitle {
     color: deepskyblue;
     margin-bottom: 0.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventInfoText {
     font-size: 1.15rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventInfoText > span {
@@ -220,15 +263,18 @@ main > img {
     border: 2px solid rgba(148, 211, 255, 0.58);
     border-radius: 1rem;
     background-color: rgba(29, 102, 140, 0.21);
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventPrizeTitle {
     color: deepskyblue;
     margin-bottom: 0.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .eventPrizeList {
     font-size: 1.15rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 li {
