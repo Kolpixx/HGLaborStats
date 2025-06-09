@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById("stats-container").style.visibility = "visible";
     document.getElementById("stats-container").style.opacity = "1";
     document.getElementById("not-found").remove();
+    document.getElementById("loading").remove();
 })
 
 function getUserInfo(userSearchParam) {
@@ -44,10 +45,11 @@ function pullStats(UUID) {
     return fetch("https://api.hglabor.de/stats/FFA/" + UUID)
         .then(response => {
             if (!response.ok) {
-                console.log("bad");
+                console.log("hglabor api request failed");
                 document.getElementById("not-found").style.visibility = "visible";
                 document.getElementById("not-found").style.opacity = "1";
                 document.getElementById("stats-container").remove();
+                document.getElementById("loading").remove();
             }
             return response.json();
         })
