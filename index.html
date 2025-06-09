@@ -31,12 +31,62 @@
         <!-- Popups -->
         <div id="playPopup">
             <h1>How to join</h1>
-            <ol inlist>
+            <ol>
                 <li>Open <span style="font-weight: bold">Minecraft Java Edition</span> (1.21.4 recommended)</li>
                 <li>Click <span style="font-weight: bold">Multiplayer</span> > <span style="font-weight: bold">Add Server</span></li>
                 <li>Enter Server IP: <span style="font-weight: bold">hglabor.de</span></li>
                 <li>Click <span style="font-weight: bold">Join Server</span> and start playing!</li>
             </ol>
+        </div>
+
+        <div id="eventsPopup">
+            <h1>Events</h1>
+            <div class="events">
+                <div>
+                    <h2 class="eventName">HG EVENT</h2>
+                    <p class="eventDate">Sonntag, 9 Februar 2025 17:00</p>
+                    <hr class="eventSeparator">
+                    <h2 class="eventInfoTitle">Einstellungen</h2>
+
+                    <p class="eventInfoText"><span>Team Größe:</span> 2 (/team)</p>
+                    <p class="eventInfoText"><span>Border:</span> 500 Blöcke in jede Richtung</p>
+                    <p class="eventInfoText"><span>Kits:</span> Bee, Blink, Cannibal, Digger, Gambler, Glider, Gravity, Rühl24.de, Kangaroo, Lumberjack, Mirror, Monk, Neo, Ninja, None, Phantom, Reaper, Scout, Spit, Squid, Surprise</p>
+                    <p class="eventInfoText"><span>Invincibility:</span> 4 Minuten</p>
+                    <p class="eventInfoText"><span>Gulag:</span> bis 15 Minuten</p>
+                    <p class="eventInfoText"><span>Feast:</span> 25 Minuten</p>
+                    <p class="eventInfoText"><span>Pit:</span> 50 Minuten</p>
+                    <p class="eventInfoText"><span>Ende:</span> nach 2 Stunden gewinnt die Person mit den meisten Kills</p>
+                    <div class="eventPrize">
+                        <h2 class="eventPrizeTitle">Preise für das Gewinnerteam</h2>
+                        <ul class="eventPrizeList">
+                            <li>1 Monat NRC+</li>
+                            <li>1x NoriskClient Cosmetic nach Wahl</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="eventName">HG EVENT</h2>
+                    <p class="eventDate">Samstag, 18 Januar 2025 18:00</p>
+                    <hr class="eventSeparator">
+                    <h2 class="eventInfoTitle">Einstellungen</h2>
+
+                    <p class="eventInfoText"><span>Team Größe:</span> 2 (/team)</p>
+                    <p class="eventInfoText"><span>Border:</span> 500 Blöcke in jede Richtung</p>
+                    <p class="eventInfoText"><span>Kits:</span> Double Kit, Surprise only</p>
+                    <p class="eventInfoText"><span>Invincibility:</span> 4 Minuten</p>
+                    <p class="eventInfoText"><span>Gulag:</span> bis 15 Minuten</p>
+                    <p class="eventInfoText"><span>Feast:</span> 25 Minuten</p>
+                    <p class="eventInfoText"><span>Pit:</span> 50 Minuten</p>
+                    <p class="eventInfoText"><span>Ende:</span> nach 2 Stunden gewinnt die Person mit den meisten Kills</p>
+                    <div class="eventPrize">
+                        <h2 class="eventPrizeTitle">Preise für das Gewinnerteam</h2>
+                        <ul class="eventPrizeList">
+                            <li>1 Monat NRC+</li>
+                            <li>1x NoriskClient Cosmetic nach Wahl</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <img src="resources/logo.png" alt="HGLabor Logo (old)">
@@ -54,7 +104,7 @@
             <div onclick="openPopup('playPopup')">
                 <p>PLAY</p>
             </div>
-            <div>
+            <div onclick="openPopup('eventsPopup')">
                 <p>EVENTS</p>
             </div>
         </div>
