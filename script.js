@@ -62,4 +62,7 @@ function closePopup() {
 
     document.getElementById("leaderboardPopup").style.opacity = "0";
     document.getElementById("leaderboardPopup").style.visibility = "hidden";
+
+    document.getElementById("imprintPopup").style.opacity = "0";
+    document.getElementById("imprintPopup").style.visibility = "hidden";
 }

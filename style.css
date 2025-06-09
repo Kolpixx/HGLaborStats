@@ -125,6 +125,20 @@ main > img {
     z-index: 1;
 }
 
+/* imprintPopup */
+
+#imprintPopup {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid rgba(148, 211, 255, 0.58);
+    background-color: rgba(29, 102, 140, 0.4);
+    z-index: 2;
+}
+
+
 /* leaderboardPopup */
 
 #leaderboardPopup {
