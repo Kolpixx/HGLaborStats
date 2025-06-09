@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let players = 0;
 
     fetch(apiURL)
-        .then(response => response.json()) // send response body to next then chain
+        .then(response => response.json())
         .then(body => {
             online = body.online;
             players = body.players.online;

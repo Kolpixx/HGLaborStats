@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HGLabor - Stats</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:700">
+    <title id="title">Kolpix's stats</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="resources/logo.png">
+    <script src="statsscript.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
+        <div class="branding" onclick="window.open('index.html', '_self')">
+            <img src="resources/logo.png" alt="HGLabor Logo (old)">
+            <div class="branding-text">
+                <p><span class="HG-text">HG</span>Labor</p>
+                <p>Stats</p>
+            </div>
+        </div>
+        <div class="small-search-wrapper">
+            <div class="search-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="rgba(0, 170, 255, 0.67)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+                <form action="./stats.html" method="get">
+                    <input type="text" name="user" placeholder="Name or UUID" autocomplete="off">
+                </form>
+            </div>
+        </div>
+
         <div class="server-widget">
             <div class="server-widget-flexbox">
                 <img src="resources/server_logo.png" alt="HGLabor Server Logo" id="server-info-logo">
@@ -24,29 +40,61 @@
             </div>
         </div>
     </header>
-
     <main>
-        <img src="resources/logo.png" alt="HGLabor Logo (old)">
-        <h1 id="title"><span class=HG-text>HG</span>Labor x <span class="NoRisk-text">NoRisk</span> Client</h1>
-        <div class="search-wrapper">
-            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="rgba(0, 170, 255, 0.67)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
-            <form action="./stats.html" method="get">
-                <input type="text" name="user" placeholder="Name or UUID" autocomplete="off">
-            </form>
+        <div id="not-found">
+            <img src="./resources/sleeping-snorlax.png" alt="Sleeping snorlax">
+            <div class="not-found-text">
+                <h1>404</h1>
+                <p>Player not found</p>
+            </div>
         </div>
-        <div class="buttons-wrapper">
-            <div>
-                <p>LEADERBOARD</p>
+        <div id="stats-container">
+
+            <div class="stats-row">
+                <div class="stats-userinfo">
+                    <img id="skull" src="https://skins.mcstats.com/skull/uuid?scale=1&overlay=true&cropMeasurement=pixels&expandMeasurement=pixels&cropLeft=0&cropRight=0&cropTop=0&cropBottom=0&expandLeft=0&expandRight=0&expandTop=0&expandBottom=0&alwaysSquare=true&grayscale=false">
+                    <h1 id="username-text">None</h1>
+                </div>
             </div>
-            <div>
-                <p>PLAY</p>
+
+            <div class="stats-row">
+                <div class="stats-skin">
+                    <img id="skin" src="https://skins.mcstats.com/body/front/uuid?scale=1&fov=50&shadow=true&disableCosmeticType=all&overlay=true&cropMeasurement=pixels&expandMeasurement=pixels&cropLeft=0&cropRight=0&cropTop=0&cropBottom=0&expandLeft=0&expandRight=0&expandTop=0&expandBottom=0&alwaysSquare=true&grayscale=false">
+                </div>
+                <div class="stats-general">
+                    <h2 class="stats-title">GENERAL</h2>
+                    <p id="xp"><span>XP:</span> </p>
+                    <p id="kills"><span>Kills:</span> </p>
+                    <p id="deaths"><span>Deaths:</span> </p>
+                    <p id="killDeathRatio"><span>K/D:</span> </p>
+                    <p id="currentKillstreak"><span>Killstreak:</span> </p>
+                    <p id="highestKillstreak"><span>Highest Killstreak:</span> </p>
+                    <p id="bounty"><span>Bounty:</span> </p>
+                </div>
             </div>
-            <div>
-                <p>EVENTS</p>
-            </div>
+
+<!--            <div class="stats-three">-->
+<!--                <div class="stats-heroes">-->
+<!--                    <h2>HEROES & ABILITIES</h2>-->
+<!--                    <div class="heroes-selection">-->
+<!--                        <div class="heroes-toph">-->
+<!--                            <h2>TOPH</h2>-->
+<!--                        </div>-->
+<!--                        <div class="heroes-katara">-->
+<!--                            <h2>KATARA</h2>-->
+<!--                        </div>-->
+<!--                        <div class="heroes-aang">-->
+<!--                            <h2>AANG</h2>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="heroes-stats">-->
+<!--                        guna-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
         </div>
     </main>
-
     <footer>
         <div class="links-wrapper">
             <a href="#">STATUS</a>

@@ -6,7 +6,6 @@
     font-family: "Poppins-bold", sans-serif;
     color: white;
     transition: ease 0.5s;
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 html, body {
@@ -39,14 +38,17 @@ header {
     font-weight: bold;
     font-size: 1.5rem;
     overflow-y: hidden;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 #server-info-logo {
     margin-right: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 #ip {
     margin-top: 0.8rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .online-flexbox {
@@ -57,6 +59,7 @@ header {
 
 #server-status {
     margin-left: 0.2rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 #online-circle {
@@ -93,18 +96,21 @@ main > img {
     font-size: 2.5rem;
     margin: 1.5rem;
     cursor: default;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-#HG-text {
+.HG-text {
     background: linear-gradient(153deg,rgba(85, 255, 255, 1) 0%, rgba(189, 255, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-#NoRisk-text {
+.NoRisk-text {
     background: linear-gradient(153deg,rgba(85, 255, 255, 1) 0%, rgba(189, 255, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
     /* Search */
@@ -121,11 +127,13 @@ main > img {
     height: 4.375rem;
     background-clip: content-box;
     margin-bottom: 2.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .search-wrapper > svg {
     margin: 1rem;
     scale: 1.25;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 @keyframes inputplaceholder {
@@ -147,6 +155,7 @@ main > img {
     color: #68ffff;
     animation: inputplaceholder 3s ease-in-out forwards;
     overflow: hidden;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .search-wrapper > form > input:focus {
@@ -181,12 +190,14 @@ main > img {
     align-items: center;
     font-weight: bold;
     font-size: 1.25rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .buttons-wrapper > div > p {
     background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(147, 235, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .buttons-wrapper > div:hover {
@@ -218,6 +229,7 @@ footer {
 .links-wrapper > a {
     margin: 0 0.5rem;
     text-decoration: none;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Socials */
@@ -233,6 +245,7 @@ footer {
 
 .socials-wrapper > svg {
     margin: 0 0.5rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 #youtube-icon:hover path {
@@ -241,4 +254,176 @@ footer {
 
 #discord-icon:hover path {
     fill: #7785cc
+}
+
+#github-icon:hover path {
+    fill: #ffffff
+}
+
+#username-text {
+    text-transform: uppercase;
+    background: linear-gradient(90deg,rgba(0, 187, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+}
+
+/* STATS SITE-SPECIFIC ELEMENTS */
+
+/* Not found */
+
+#not-found {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease;
+    margin: auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70vh;
+    height: 40vh;
+    border: 3px solid rgba(148, 211, 255, 0.58);
+    border-radius: 1rem;
+    background-color: rgba(88, 191, 255, 0.42);
+    padding: 1rem;
+}
+
+.not-found-text {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.not-found-text > h1 {
+    font-size: 10rem;
+}
+
+.not-found-text > p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Stats */
+
+#stats-container {
+    visibility: hidden;
+    opacity: 0;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 3.125rem;
+    transition: 1s ease;
+}
+
+.stats-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.stats-row > div {
+    border: 2px solid rgba(148, 211, 255, 0.58);
+    border-radius: 1rem;
+    background: rgba(88, 191, 255, 0.42);
+}
+
+/* First row */
+
+.stats-userinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.stats-userinfo > img {
+    height: 90%;
+    margin: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stats-userinfo > h1 {
+    font-size: 3.5rem;
+    margin-right: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Second row */
+
+/* Skin */
+
+.stats-skin {
+    height: 100%;
+    width: 40%;
+}
+
+.stats-skin > img {
+    transform: scale(0.85);
+}
+
+/* General */
+
+.stats-general {
+    width: 60%;
+    height: 100%;
+}
+
+.stats-title {
+    font-size: 1.75rem;
+    margin: 1rem;
+    text-decoration: underline;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stats-general > p {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.stats-general > p > span {
+    background: linear-gradient(90deg,rgba(76, 180, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* top left logo/branding */
+
+header {
+    display: flex;
+}
+
+.branding {
+    display: flex;
+    margin: 1rem;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.branding-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.branding-text > p {
+    height: 50%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* (small and buggy) Search */
+
+.small-search-wrapper {
+    margin-top: 0.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
 }
