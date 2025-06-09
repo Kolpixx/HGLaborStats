@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const serverDomain = "hglabor.de";
     const apiURL = "https://api.mcsrvstat.us/3/" + serverDomain;
 
