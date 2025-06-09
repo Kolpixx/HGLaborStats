@@ -82,7 +82,7 @@ header {
 /* Main */
 
 main {
-    height: 80vh;
+    height: 84vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -381,8 +381,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 10vh;
-    line-height: 10vh;
+    height: 6vh;
+    line-height: 6vh;
 }
 
 /* Links */
