@@ -10,6 +10,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Darken (for popups) -->
+    <div id="darken" onclick="closePopup()"></div>
     <header>
         <div class="server-widget">
             <div class="server-widget-flexbox">
@@ -26,6 +28,17 @@
     </header>
 
     <main>
+        <!-- Popups -->
+        <div id="playPopup">
+            <h1>How to join</h1>
+            <ol inlist>
+                <li>Open <span style="font-weight: bold">Minecraft Java Edition</span> (1.21.4 recommended)</li>
+                <li>Click <span style="font-weight: bold">Multiplayer</span> > <span style="font-weight: bold">Add Server</span></li>
+                <li>Enter Server IP: <span style="font-weight: bold">hglabor.de</span></li>
+                <li>Click <span style="font-weight: bold">Join Server</span> and start playing!</li>
+            </ol>
+        </div>
+
         <img src="resources/logo.png" alt="HGLabor Logo (old)">
         <h1 id="title"><span class=HG-text>HG</span>Labor x <span class="NoRisk-text">NoRisk</span> Client</h1>
         <div class="search-wrapper">
@@ -38,7 +51,7 @@
             <div>
                 <p>LEADERBOARD</p>
             </div>
-            <div>
+            <div onclick="openPopup('playPopup')">
                 <p>PLAY</p>
             </div>
             <div>

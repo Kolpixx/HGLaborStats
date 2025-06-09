@@ -42,3 +42,26 @@ document.addEventListener('mousedown', (event) => {
         event.preventDefault();
     }
 })
+
+function openPopup(popupName) {
+    console.log("Opened Play popup");
+
+    document.getElementById(popupName).style.visibility = "visible";
+    document.getElementById(popupName).style.opacity = "1";
+    document.getElementById("darken").style.visibility = "visible";
+    document.getElementById("darken").style.opacity = "1";
+}
+
+function closePopup() {
+    document.getElementById("darken").style.opacity = "0";
+    document.getElementById("darken").style.visibility = "hidden";
+
+    document.getElementById("playPopup").style.opacity = "0";
+    document.getElementById("playPopup").style.visibility = "hidden";
+
+    document.getElementById("eventsPopup").style.opacity = "0";
+    document.getElementById("eventsPopup").style.visibility = "hidden";
+
+    document.getElementById("leaderboardPopup").style.opacity = "0";
+    document.getElementById("leaderboardPopup").style.visibility = "hidden";
+}
