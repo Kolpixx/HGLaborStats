@@ -475,6 +475,11 @@ footer {
     padding: 1rem;
 }
 
+#four-hundred-and-four > img {
+    height: 100%;
+    width: 100%;
+}
+
 /* STATS SITE-SPECIFIC ELEMENTS */
 
 /* Loading */
@@ -527,6 +532,11 @@ footer {
 .not-found-text > p {
     font-size: 2rem;
     font-weight: bold;
+}
+
+#not-found > img {
+    height: 100%;
+    width: 100%;
 }
 
 /* Stats */
