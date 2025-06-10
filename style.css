@@ -20,6 +20,19 @@ body {
     left: 0;
 }
 
+/* Mobile */
+@media only screen and (max-width: 1000px) {
+    .server-widget {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .branding {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 /* Header */
 
 header {
@@ -600,11 +613,13 @@ footer {
 /* Skin */
 
 .stats-skin {
+    display: flex;
+    justify-content: center;
     height: 100%;
     width: 40%;
 }
 
-.stats-skin > img {
+#skin {
     transform: scale(0.85);
 }
 
