@@ -74,19 +74,17 @@ function getLeaderboard(sort) {
     return fetch("https://api.hglabor.de/stats/FFA/top?sort=" + sort)
         .then(response => response.json())
         .then(async body => {
-            console.log(body);
+
+            const usernamePromises = body.map(user => getUserInfo(user.playerId));
+            const allUsernames = await Promise.all(usernamePromises);
+
             let i = 1;
             for (const user of body) {
-                const playerId = user.playerId;
-                const userInfo = await getUserInfo(playerId);
-
-                const username = userInfo.username;
+                const username = allUsernames[i-1].username;
                 const kills = user.kills;
                 const deaths = user.deaths;
-                let killDeathRatio;
-                if (deaths === 0) {
-                    killDeathRatio = kills;
-                } else {
+                let killDeathRatio = kills;
+                if (deaths !== 0) {
                     killDeathRatio = (kills / deaths).toFixed(1);
                 }
                 const currentKillStreak = user.currentKillStreak;
