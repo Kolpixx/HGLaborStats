@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const killDeathRatio = (kills / deaths).toFixed(1);
     const currentKillStreak = statsJSON.currentKillStreak;
     const highestKillStreak = statsJSON.highestKillStreak;
-    const bounty = statsJSON.bounty || "0";
+    const bounty = statsJSON.bounty;
 
     document.getElementById("title").innerText = username + "'s stats";
     document.getElementById("username-text").innerText = username;
